@@ -1,0 +1,411 @@
+html {
+    box-sizing: border-box;
+}
+* {
+    box-sizing: inherit;
+    font-family: 'Prompt','Kanit', sans-serif;
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+/* Link */
+a {
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+
+/* Header */
+header {
+    font-weight: 900;
+}
+.ads img{
+    display: block;
+    min-width: 100%;
+    max-width: 100%;
+}
+nav ul {  
+    list-style: none;
+    margin: 0;
+    padding: .5em 2em;
+    display: flex;   
+}
+nav ul li a {
+    display: block;
+    font-size: .75em;
+}
+
+/* Navigation */
+
+/* First Nav */
+nav ul.first-nav {
+    justify-content: space-between;
+}
+/* Logo */
+nav ul li .logo {
+    background: url(../img/logo-mob.png) no-repeat;
+    background-size: contain;
+    height: 56px;
+    width: 56px;
+}
+/* Login Nav*/
+nav ul li .login {
+    margin-top: 10px;
+    padding: 0;
+}  
+nav .login li{
+    display: flex;
+    align-items: center;
+} 
+nav .login li a{
+    padding: .1em 1em;
+    display: flex;
+    align-items: center;
+}
+nav .login li a:active {
+    background-color: rgba(0, 0, 0, 0.147);
+}
+.icon-login {
+    width: 34px;
+    height: 34px;
+    background: url(../img/mastersprite.png) no-repeat;
+    background-position: -313px -3px;
+    margin-left: 4px;
+    display: block;
+}
+.first-nav .line {
+    border-left:1px dotted black ;  
+}
+
+/* Second Nav */
+.red-bar {
+    background-color:#E4002b;
+    padding: 0;
+    margin: 0;
+}
+nav ul.second-nav {
+    margin: 0;
+    padding: 0;
+}
+nav ul.second-nav li {
+    flex: auto;
+}   
+nav ul.second-nav li a {
+    padding: 1em 1.5em;   
+    border-left: 1px solid #ffffff63;
+    color: white;
+} 
+nav ul.second-nav li a:hover {
+    background-color: black;
+}
+.second-nav .line {
+    border-right: 1px solid #ffffff63; 
+} 
+/* Second Nav - Icon */
+.second-nav li span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.second-nav li span i {
+    width: 1.4em;
+    height: 1.4em;;
+    margin-right: 4px;
+    background-size: cover; 
+}
+.icon-pick {
+    background: url(../img/Self-Pick-up-icon.png) no-repeat;
+}
+.icon-deli {
+    background: url(../img/Delivery-icon.png) no-repeat;
+}
+.icon-cater {
+    background: url(../img/catering-icon.png) no-repeat;
+}
+
+/* Main Content*/
+
+/* Banner */
+a.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 27em;
+    background: url(../img/th-Th_JPUWebsiteBanner-mobile.jpg) no-repeat center center;
+    background-size: cover;      
+} 
+a.banner span {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;    
+}
+span.previous {
+    border-radius: 0 4px 4px 0;
+    background: url(../img/mastersprite.png) no-repeat;
+    background-position: -200px 9px;  
+    background-color: rgba(0,0,0,.6);
+}
+span.next {
+    border-radius: 4px 0 0 4px;
+    background: url(../img/mastersprite.png) no-repeat;
+    background-position: -252px 10px;
+    background-color: rgba(0,0,0,.6);
+}
+/* Box */
+.box-container {
+    display: flex;
+    flex-direction: column;
+}
+.box {
+    width: 100%;
+    height: 16em;   
+    margin-top: .6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#pickup-box {
+    background: url(../img/th-TH_tile-lg-1.jpg) no-repeat center center;
+    background-size: cover;
+}
+#catering-box {
+    background: url(../img/th-TH_tile-lg-2.jpg) no-repeat center center;
+    background-size: cover;
+}
+#event-box {
+    background: url(../img/th-TH_pubg_home.jpg) no-repeat center center;
+    background-size: cover;
+    height: 28em;
+    display: flex;
+    justify-content: unset;
+    align-items: normal;
+}
+#event-box a{
+    flex: auto;
+}
+/* Box-Content */
+.box-content {
+    font-size: 1.375rem;
+    font-weight: 900;
+    color: white;
+    align-items: center;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* Box-Content Button */
+.box-content a{
+    color: white;
+    text-align: center;
+    background: #e4002b;
+    border-radius: 0.125rem;
+    padding: .4125rem 2.5rem;
+}   
+.box-content a:hover {
+    background: #c70025;
+}
+.box-content a:active {
+    background-color: #e81138;
+}
+
+/* Footer */
+footer {
+    font-weight: 900;
+}
+.footer-head {
+    height: 65px;
+    background-color: #E4002b;
+    margin-top: 10px;
+}
+/* Footer content */
+.footer-content {
+    display: flex;
+    flex-direction: column;
+}
+.footer-item {
+    width: 90%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.152);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto 10px;
+}
+.footer-item h3{
+    font-size: 1.2em;
+    color: #E4002b;
+    display: inline;
+    margin: 10px 0;
+}
+ul.footer-list {
+    display: none;
+    padding: 0;
+    margin: 0;
+}
+ul.footer-list li{
+    list-style-position: inside;
+}
+.icon-dropdown {
+    width: 25px;
+    height: 25px;
+    display: block;
+    background: url(../img/mastersprite.png) no-repeat;
+    background-position: -179px -5px;
+}
+.footer-item .social-contact {
+    display: none;
+}
+/* Footer privacy */
+.footer-privacy {
+    width: 80%;
+    margin: 0 auto;
+}
+.footer-privacy ul {
+    list-style: none; 
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 0 0;
+    padding: 0;
+}
+.footer-privacy ul li {
+    font-size: .8125rem;
+    text-align: center;
+    padding: 0 5px;
+}
+.footer-privacy li+li::before {
+    content: "|";
+    margin-right: 10px;
+}
+.footer-privacy .copyright {
+    font-size: .8em;
+    display: flex;
+    justify-content: center;
+}
+.footer-end {
+    width: 272px;
+    height: 54px;
+    background: url(../img/mastersprite.png) no-repeat;
+    background-position: 0 -225px;
+    margin: 10px auto 0;
+}
+
+/* Cookie */
+.cookie {
+    background: url(../img/redCookieBTN.png);
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    position: fixed;
+    bottom: 0;
+    margin: 15px;
+}
+
+
+@media screen and (min-width: 800px) {
+    /* Header */
+    nav {
+        width: 85%;
+        margin: 0 auto;
+    }
+    .ads {
+        display: none;
+    }
+    nav ul {
+        padding: .5em 0;
+    } 
+    nav ul li a {
+        font-size: 1.2em;
+    }
+    /* First Nav*/
+    nav ul li .logo {
+        background: url(../img/logo-desk.png) no-repeat;
+        background-size: cover;
+        height: 78px;
+        width: 252px;
+        margin-left: 10px;
+    }
+    nav ul li .login {
+        margin-top: 20px;
+    }
+    /* Second Nav */
+    nav ul.second-nav li { 
+        flex: none;
+    }
+    nav ul.second-nav li a {
+        padding: 1.2em 1.5em;   
+    }  
+
+    /*  Main */
+    a.banner {
+        background: url(../img/th-Th_JPUWebsiteBanner.jpg) no-repeat;
+        background-size: cover;
+        height: 33em;
+    }
+    .box-container {
+        flex-direction: row;
+        padding: 0 .5em;
+    }
+    .box {
+        flex: auto;
+        margin: 1em .5em;
+        height: 28em;
+    }
+
+    /* Footer Content*/
+    .footer-head {
+        margin-top: 0;
+    }
+    .footer-content {
+        flex-direction: row;
+    }   
+    .footer-item {
+        width: 25%;
+        display: block;
+        border-bottom: 0; 
+        padding-left: 5em;
+        margin-top: 1.5em;
+    }
+    .icon-dropdown {
+        display: none;
+    }  
+    ul.footer-list {
+        display: block;
+    }
+    /* Footer Contact */
+    .footer-item .social-contact {
+        list-style: none;
+        display: flex;
+        padding: 0;
+        margin: 0;
+        margin-top: 18px;
+    }
+    .social-contact a{
+        width: 25px;
+        height: 25px;
+        display: block;
+        margin-left: 10px;
+    }
+    /* Icon Contact */
+    #fb {
+        background: url(../img/mastersprite.png) no-repeat;
+        background-position: -205px -69px;
+    }
+    #ig {
+        background: url(../img/mastersprite.png) no-repeat;
+        background-position: -243px -69px;
+    }
+    #tw {
+        background: url(../img/mastersprite.png) no-repeat;
+        background-position: -287px -70px;
+    }
+    #yt {
+        background: url(../img/mastersprite.png) no-repeat;
+        background-position: -333px -72px;
+    }
+    #ln {
+        background: url(../img/mastersprite.png) no-repeat;
+        background-position: -376px -69px;
+    }
+}
