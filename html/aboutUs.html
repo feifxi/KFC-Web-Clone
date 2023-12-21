@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&family=Prompt:wght@300;600&display=swap" rel="stylesheet">
+    <title>AboutUs</title>
+    <link rel="icon" href="https://th.bing.com/th/id/R.cfdb6003cde2cc403a62a4fc4805ea91?rik=LxCe%2f06xttGqqA&riu=http%3a%2f%2ffc08.deviantart.net%2ffs70%2fi%2f2013%2f088%2fa%2f7%2fkfc_icon_by_slamiticon-d5zfzd1.png&ehk=U8Ob%2fF71TmZGqLj5Uz9b6Blo2mwP3pf%2fcgQxSutvJ28%3d&risl=&pid=ImgRaw&r=0" type="image/png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Kanit', sans-serif;
+            font-family: 'Prompt', sans-serif;
+            font-weight: 900;
+            box-sizing: border-box;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        /* Header */
+        header {
+            width: 83%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 22px; 
+            font-size: 20px;
+        }
+        /* Logo */
+        header .logo {
+            height: 78px;
+            width: 252px;
+            background: url(https://www.kfc.co.th/Content/BrandSite/logo-desk.png) no-repeat;
+            background-size: cover;
+        }
+        /* Login */
+        header ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+        }
+        header li {
+            padding: 0 20px;
+            height: 40%;
+        }
+            header li.login {
+            border-left: 1px dotted black;
+        }
+        li.login a {
+            display: flex;
+        }
+        header li:active {
+            background-color: rgb(232, 232, 232);
+        }
+        .login i{
+            width: 34px;
+            height: 34px;
+            background: url(https://www.kfc.co.th/Content/BrandSite/mastersprite.png) no-repeat;
+            background-position: -313px -4px;
+            margin-left: 4px;
+        }
+        /* Nav */
+        nav {
+            background-color:#E4002b;
+            display: flex;
+        }
+        /* Nav Bottom */
+        nav ul {
+            width: 82%;
+            margin: 0 auto;
+            display: flex;
+            list-style: none;
+        }
+        .nav-button {
+            color: white;
+            text-align: center;
+            padding: 25px 27px 21px;
+            border-left: 1px solid #ffffff63;
+            display: flex;
+            font-size: 18px;
+        }
+        #last-button {
+            border-right: 1px solid #ffffff63;
+        }
+        nav a:hover {
+            background-color: black;
+        }
+        /* Nav Icon*/
+        nav i{
+            width: 24px;
+            height: 24px;
+            margin-right: 8px;
+        }
+        i#pickup {    
+            background: url(https://www.kfc.co.th/Content/BrandSite/Self-Pick-up-icon.png) no-repeat;
+            background-size: cover;
+        }
+        i#delivery {   
+            background: url(https://www.kfc.co.th/Content/BrandSite/Delivery-icon.png) no-repeat;
+            background-size: cover;
+        }
+        i#catering {
+            background: url(https://www.kfc.co.th/Content/BrandSite/catering-icon.png) no-repeat;
+            background-size: cover;
+        }
+
+
+        /* Main-Content */
+        .main-content {
+
+        }
+        /* Slide */
+        img#slide {
+            width: 100%;
+        }
+        /* About Us  */
+        .aboutUs-content {
+            width: 98%;
+            display: flex;
+            background-color: #f1e8d9;
+            margin: 15px auto;   
+        }
+        .aboutUs-content img{
+            height: 430px;
+        }
+        .text-aboutUs p , .list-item span{
+            font-weight: normal;
+            font-size: 24px;
+        }
+        /* First-AboutUs */
+        #aboutUs1 .text-aboutUs {
+            padding: 10px 120px 10px 30px;
+        }
+        /* Second-AboutUs*/
+        #aboutUs2 .text-aboutUs {
+            padding: 10px 50px 10px 120px;
+        }
+        #aboutUs2 img{
+            order: 1;
+        }
+        .list-item {
+            display: flex;
+        }
+        .list-item span {
+            margin-right: 30px;
+        }
+        /* Fun Fact */
+        .funfact {
+            padding: 20px 100px;  
+        }
+        .funfact-container {
+            display: flex;
+        }
+        .funfact-item {
+            margin: 20px;
+        }
+        .funfact-item p{
+            font-weight: normal;
+            font-size: 24px;
+        }
+        /* Footer */
+        /* Footer - head */
+        .footer-head {
+            width: 100%;
+            padding: .625rem 0;
+            min-height: 65px;
+            background: #e4002b;
+        }
+        /* footer - Main */
+        .footer-container {
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+        }
+        .footer-main {
+            width: 80%;
+            display: flex;
+            padding-top: 1.25rem;
+            font-size: 1.225rem; 
+            color: #e4002b;
+        }
+        .footer-main .block {
+            flex: 1;
+            padding-left: 95px;
+        }
+        .footer-main li {
+            list-style-position: inside;
+            color: black;
+            padding-bottom: 3px;
+            font-size: 1rem;
+        }
+        /* Footer - Privacy */
+        .footer-privacy {
+            width: 80%;
+            padding: 1.875rem 0 .875rem;
+        }
+        ul.privacy-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            list-style: none;            
+        }
+        ul.privacy-container li {
+            text-align: center;
+            padding: 0 5px;
+            font-size: .8125rem;
+        }
+        ul.privacy-container li+li::before {
+            margin-right: 10px;
+            content: "|";
+        }
+        .copyright {
+            display: flex;
+            justify-content: center;
+            font-size: .8125rem;
+        }
+        /* Footer - end */  
+        #footer-end {
+            margin: 0 auto;
+            height: 54px;
+            width: 272px;
+            background: url(https://www.kfc.co.th/Content/BrandSite/mastersprite.png) no-repeat;
+            background-position: 0 -225px;
+        }
+        /* Footer - contact icon */
+        ul.social {
+            margin-top: 18px;
+            display: flex;
+        }
+        .social li {
+            width: 25px; 
+            height: 25px; 
+            margin-left: 15px;
+            display: flex;
+        }
+        .social a{
+            flex: auto;
+        }
+        #fb {
+            background: url(https://www.kfc.co.th/Content/BrandSite/mastersprite.png) no-repeat;
+            background-position: -205px -69px;
+        }
+        #ig {
+            background: url(https://www.kfc.co.th/Content/BrandSite/mastersprite.png) no-repeat;
+            background-position: -243px -69px;
+        }
+        #tw {
+            background: url(https://www.kfc.co.th/Content/BrandSite/mastersprite.png) no-repeat;
+            background-position: -287px -70px;
+        }
+        #yt {
+            background: url(https://www.kfc.co.th/Content/BrandSite/mastersprite.png) no-repeat;
+            background-position: -333px -72px;
+        }
+        #ln {
+            background: url(https://www.kfc.co.th/Content/BrandSite/mastersprite.png) no-repeat;
+            background-position: -376px -69px;
+        }
+        /* Cookie */
+        .cookie {
+            position: fixed;
+            width: 50px;
+            height: 50px;
+            background-color: #E4002b;
+            border-radius: 100%;
+            bottom: 0;
+            margin: 15px;
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header-content-->
+    <div class="header-content">
+        <!-- Header -->
+        <header>
+            <a href="../index.html" class="logo"></a>
+            <ul>
+                <li><a href="login.html" >En</a></li>
+                <li class="login"><a href="login.html">เข้าสู่ระบบ<i></i></a></li>
+            </ul>
+        </header>
+        <!-- Nav -->
+        <nav>
+            <ul>
+                <li><a href="promotion.html" class="nav-button"><i id="pickup"></i>รับที่ร้าน/รถ</a></li>
+                <li><a href="promotion.html" class="nav-button"><i id="delivery"></i>เดลิเวอรี</a></li>
+                <li><a href="promotion.html" class="nav-button" id="last-button"><i id="catering"></i>เมนูจัดเลี้ยง</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- Main-Content -->
+    <div class="main-content">
+        <!-- Slide -->
+        <img src="https://www.kfc.co.th/Content/BrandSite/banner/desk/about-kfc_banner_TH.jpg" alt="story" id="slide">
+        <!-- About Us -->
+        <div class="aboutUs-content" id="aboutUs1">
+            <img src="https://www.kfc.co.th/Content/BrandSite/category/tile/desk/tile-colonel-sanders.jpg" alt="sander1">
+            <div class=text-aboutUs>
+                <h1>จากผู้พันแซนเดอร์ส สู่ร้าน KFC</h1>
+                <p>ร้าน KFC ถือกำเนิดอย่างเป็นทางการในปี พ.ศ. 2495 โดยผู้พันแซนเดอร์สได้ขายแฟรนไชส์แรกให้กับ พีท ฮาร์แมน เพื่อนที่รู้จักกันระหว่างเรียนหลักสูตรบริหารร้านอาหารและ เป็นเจ้าของร้านอาหารอยู่ในรัฐยูทาห์ ซึ่งฮาร์แมนยังเป็นคนตั้งชื่อ “ไก่ทอดจากรัฐเคนตั๊กกี้” (Kentucky Fried Chicken) ขึ้นเป็นจุดขายจนกลายเป็นชื่อแฟรนไชส์ในที่สุดด้วย</p>
+            </div>
+        </div>
+        <div class="aboutUs-content" id="aboutUs2">
+            <img src="https://www.kfc.co.th/Content/BrandSite/category/tile/desk/tile-about-kfcThai.jpg" alt="sander1">
+            <div class=text-aboutUs>
+                <h1>KFC Thailand</h1>
+                <div class="list-item">
+                    <span>2527</span> 
+                    <p>KFC เปิดสาขาแรกในประเทศไทยกับพันธมิตรใหญ่อย่าง เซ็นทรัล เรสเตอรองต์ กรุ๊ป จำกัด (CRG) ที่เซ็นทรัลลาดพร้าว</p>
+                </div>
+                <div class="list-item">
+                    <span>2559</span> 
+                    <p>เรสเตอรองต์ ดีเวลลอปเม้นต์ (RD) เข้ามาผลึกกำลัง ร่วมผลักดันธุรกิจเฟรนไชส์ KFC ให้เติบโตอย่างมีประสิทธิภาพ</p>
+                </div>
+                <div class="list-item">
+                    <span>2560</span> 
+                    <p>เป็นปีแห่งความสำเร็จของ KFC หลังจากผันตัวเองสู่รูปแบบ ธุรกิจแฟรนไชส์ 100% และมีพันธมิตรอย่าง คิวเอสอาร์ออฟเอเชีย (QSA) เข้าร่วมด้วย</p>
+                </div>
+                <div class="list-item">
+                    <span>2563</span> 
+                    <p>เปิดประสบการณ์ล้ำกลางเมือง กับ KFC แฟลกชิปสโตร์ แห่งแรกของไทย ที่สามย่าน มิตรทาวน์ ให้บริการ 24 ชั่วโมง ด้วยระบบที่ทันสมัย ตอบรับกับไลฟ์สไตล์ที่เปลี่ยนไป</p>
+                </div>
+            </div>
+        </div>
+        <div class="funfact">
+            <h1>OUR FUN FACTS</h1>
+            <div class="funfact-container">
+                <div class="funfact-item">
+                    <img src="https://www.kfc.co.th/Content/BrandSite/category/tile/desk/tile_branches.png" alt="#">
+                    <p>KFC มีมากกว่า 800 สาขาทั่วประเทศ ที่ครอบคลุมทั้ง 73 จังหวัด</p>
+                </div>
+                <div class="funfact-item">
+                    <img src="https://www.kfc.co.th/Content/BrandSite/category/tile/desk/tile_chicken.png" alt="#">
+                    <p>25 ล้านชิ้น คือจำนวน ไก่ทอดสุดอร่อย ที่เราเสิร์ฟให้ลูกค้า คนไทยต่อเดือน</p>
+                </div>
+                <div class="funfact-item">
+                    <img src="https://www.kfc.co.th/Content/BrandSite/category/tile/desk/tile_store.png" alt="#">
+                    <p>90 ล้านครั้ง คือจำนวน ลูกค้าเคเอฟซี ที่เราเต็มใจให้บริการ ตลอดทั้งปี</p>
+                </div>
+                <div class="funfact-item">
+                    <img src="https://www.kfc.co.th/Content/BrandSite/category/tile/desk/tile_services.png" alt="#">
+                    <p>Harvest & Colonel's Kitchen เราส่งต่ออาหาร เพื่อชุมชนทั่วประเทศไทย</p>
+                </div>
+
+            </div>       
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <!-- Footer Head -->
+        <div class="footer-head"></div>
+        <!-- Footer main -->
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="block">
+                    อาหารของเรา
+                    <ul>
+                        <li><a href="aboutUs.html">มาตรฐานความปลอดภัยอาหาร</a></li>
+                    </ul>
+                </div>
+                <div class="block">
+                    KFC ประเทศไทย
+                    <ul>
+                        <li><a href="aboutUs.html">เกี่ยวกับ KfC</a></li>
+                        <li><a href="aboutUs.html">คำถามที่พบบ่อย</a></li>
+                        <li><a href="aboutUs.html">ร่วมงานกับเรา</a></li>
+                    </ul>
+                </div>
+                <div class="block">
+                    ช่องทางในการติดต่อ
+                    <ul>
+                        <li><a href="aboutUs.html">ติดต่อเรา</a></li>
+                    </ul>
+                    <ul class="social">
+                        <li id="fb"><a href="login.html"></a></li>
+                        <li id="ig"><a href="login.html"></a></li>
+                        <li id="tw"><a href="login.html"></a></li>
+                        <li id="yt"><a href="login.html"></a></li>
+                        <li id="ln"><a href="login.html"></a></li>
+                    </ul>  
+                </div>
+            </div>
+        <!-- Footer privacy -->
+            <div class="footer-privacy">
+                <ul class="privacy-container">
+                    <li><a href="aboutUs.html">คำชีเแจงความเป็นส่วนตัว</a></li>
+                    <li><a href="aboutUs.html">เงื่อนไขการใช้บริการ</a></li>
+                </ul>
+                <div class="copyright">© KFC Thailand. All rights reserved.</div>
+            </div>
+        </div>
+        <!-- footer End -->
+        <div id="footer-end"></div>
+    </footer>
+
+    <!-- Cookie -->
+    <a href="#" class="cookie">Cookie</a>
+</body>
+</html>
