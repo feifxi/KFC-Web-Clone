@@ -1,1 +1,1 @@
-# a student so project don't be surprised with monkey layout.😎
+# a student project so don't be surprised with monkey layout.😎
