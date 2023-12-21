@@ -1,1 +1,3 @@
-# don't be surprised with this sh## layout from a monkey student 🦍
+# don't be surprised with sh## layout from a monkey student 🦍
+- Individual web clone project
+- Support Resposive design
