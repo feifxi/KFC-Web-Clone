@@ -1,1 +1,4 @@
-# A student project so don't be surprised with monkey layout.😎
+# don't be surprised with sh## layout from a monkey student project🦍
+- Individual web clone project
+- Support Resposive design
+- Hosting by Github Pages
